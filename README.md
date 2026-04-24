@@ -1,4 +1,4 @@
-# @watchmaker/typed-keys
+# @swatchmaker/typed-keys
 
 A type-safe key builder for TypeScript with full autocomplete and runtime validation. Useful for key-value stores, caching layers, and any system that uses structured keys.
 
@@ -15,17 +15,17 @@ A type-safe key builder for TypeScript with full autocomplete and runtime valida
 ## Installation
 
 ```bash
-npm install @watchmaker/typed-keys
+npm install @swatchmaker/typed-keys
 # or
-pnpm add @watchmaker/typed-keys
+pnpm add @swatchmaker/typed-keys
 # or
-yarn add @watchmaker/typed-keys
+yarn add @swatchmaker/typed-keys
 ```
 
 ## Quick Start
 
 ```typescript
-import { defineBuilder } from '@watchmaker/typed-keys';
+import { defineBuilder } from '@swatchmaker/typed-keys';
 
 // Define your key hierarchy as a schema
 const KeyBuilder = defineBuilder([
@@ -188,7 +188,7 @@ defineBuilder([...invalid parent]);
 ## Complex Example
 
 ```typescript
-import { defineBuilder } from '@watchmaker/typed-keys';
+import { defineBuilder } from '@swatchmaker/typed-keys';
 
 const KeyBuilder = defineBuilder([
   { name: 'org', params: ['string'], parent: null },

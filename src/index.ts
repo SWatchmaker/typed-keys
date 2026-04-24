@@ -1,11 +1,11 @@
 /**
- * @watchmaker/typed-keys
+ * @swatchmaker/typed-keys
  *
  * A type-safe key builder for TypeScript with full autocomplete and runtime validation.
  *
  * @example
  * ```typescript
- * import { defineBuilder } from '@watchmaker/typed-keys';
+ * import { defineBuilder } from '@swatchmaker/typed-keys';
  *
  * const KeyBuilder = defineBuilder([
  *   { name: 'org', params: ['string'], parent: null },

@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { defineBuilder } from '../builder.js';
 
-describe('@watchmaker/typed-keys with IDs', () => {
+describe('@swatchmaker/typed-keys with IDs', () => {
   describe('basic functionality', () => {
     it('should build a simple key with one level', () => {
       const KeyBuilder = defineBuilder([
