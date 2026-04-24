@@ -1,5 +1,5 @@
 /**
- * Type-level tests for @watchmaker/typed-keys.
+ * Type-level tests for @swatchmaker/typed-keys.
  *
  * These tests verify that TypeScript provides proper autocomplete and catches
  * invalid chains at compile time.
