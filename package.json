@@ -1,7 +1,7 @@
 {
   "name": "@watchmaker/typed-keys",
   "version": "0.1.0",
-  "description": "Type-safe Redis key builder with compile-time chain enforcement",
+  "description": "Type-safe key builder with compile-time chain enforcement",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -29,7 +29,7 @@
     "prepublishOnly": "pnpm run build && pnpm run test"
   },
   "keywords": [
-    "redis",
+    "key-value",
     "typescript",
     "builder",
     "type-safe",

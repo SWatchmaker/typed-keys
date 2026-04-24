@@ -1,6 +1,6 @@
 # @watchmaker/typed-keys
 
-A type-safe Redis key builder with full TypeScript autocomplete and runtime validation.
+A type-safe key builder for TypeScript with full autocomplete and runtime validation. Useful for key-value stores, caching layers, and any system that uses structured keys.
 
 ## Features
 

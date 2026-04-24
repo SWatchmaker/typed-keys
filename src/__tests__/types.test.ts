@@ -1,5 +1,5 @@
 /**
- * Type-level tests for typed-redis-builder.
+ * Type-level tests for @watchmaker/typed-keys.
  *
  * These tests verify that TypeScript provides proper autocomplete and catches
  * invalid chains at compile time.

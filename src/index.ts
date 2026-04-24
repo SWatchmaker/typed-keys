@@ -1,7 +1,7 @@
 /**
  * @watchmaker/typed-keys
  *
- * A type-safe Redis key builder with full TypeScript autocomplete and runtime validation.
+ * A type-safe key builder for TypeScript with full autocomplete and runtime validation.
  *
  * @example
  * ```typescript

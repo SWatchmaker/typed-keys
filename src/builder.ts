@@ -76,7 +76,7 @@ class TypedBuilderImpl<const S extends readonly LevelDef<any, any, any>[]> {
   }
 
   /**
-   * Build the final Redis key string.
+   * Build the final key string.
    */
   private build(): string {
     if (this._parts.length === 0) {
@@ -231,7 +231,7 @@ function validateSchema(
 }
 
 /**
- * Define a typed Redis key builder schema.
+ * Define a typed key builder schema.
  *
  * @example
  * ```typescript
