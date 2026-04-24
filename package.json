@@ -1,6 +1,6 @@
 {
-  "name": "@watchmaker/typed-keys",
-  "version": "0.1.0",
+  "name": "@swatchmaker/typed-keys",
+  "version": "0.1.1",
   "description": "Type-safe key builder with compile-time chain enforcement",
   "type": "module",
   "main": "./dist/index.js",
@@ -26,7 +26,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:types": "vitest typecheck",
-    "prepublishOnly": "pnpm run build && pnpm run test"
+    "prepublishOnly": "pnpm run build && pnpm run test",
+    "prepare": "simple-git-hooks"
   },
   "keywords": [
     "key-value",
@@ -42,17 +43,21 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/watchmaker/typed-keys.git"
+    "url": "git+https://github.com/SWatchmaker/typed-keys.git"
   },
   "bugs": {
-    "url": "https://github.com/watchmaker/typed-keys/issues"
+    "url": "https://github.com/SWatchmaker/typed-keys.git/issues"
   },
-  "homepage": "https://github.com/watchmaker/typed-keys#readme",
+  "homepage": "https://github.com/SWatchmaker/typed-keys.git#readme",
+  "simple-git-hooks": {
+    "pre-commit": "pnpm run build && pnpm run test"
+  },
   "devDependencies": {
     "typescript": "^5.6.3",
     "eslint": "^8.55.0",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
-    "vitest": "^1.6.0"
+    "vitest": "^1.6.0",
+    "simple-git-hooks": "^2.12.0"
   }
 }
