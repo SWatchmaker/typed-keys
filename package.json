@@ -26,7 +26,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:types": "vitest typecheck",
-    "prepublishOnly": "pnpm run build && pnpm run test"
+    "prepublishOnly": "pnpm run build && pnpm run test",
+    "prepare": "simple-git-hooks"
   },
   "keywords": [
     "key-value",
@@ -48,11 +49,15 @@
     "url": "https://github.com/watchmaker/typed-keys/issues"
   },
   "homepage": "https://github.com/watchmaker/typed-keys#readme",
+  "simple-git-hooks": {
+    "pre-commit": "pnpm run build && pnpm run test"
+  },
   "devDependencies": {
     "typescript": "^5.6.3",
     "eslint": "^8.55.0",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
-    "vitest": "^1.6.0"
+    "vitest": "^1.6.0",
+    "simple-git-hooks": "^2.12.0"
   }
 }
