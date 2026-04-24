@@ -1,0 +1,58 @@
+{
+  "name": "@watchmaker/typed-keys",
+  "version": "0.1.0",
+  "description": "Type-safe Redis key builder with compile-time chain enforcement",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc --project tsconfig.json",
+    "build:watch": "tsc --watch",
+    "lint": "eslint src --ext ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:types": "vitest typecheck",
+    "prepublishOnly": "pnpm run build && pnpm run test"
+  },
+  "keywords": [
+    "redis",
+    "typescript",
+    "builder",
+    "type-safe",
+    "key",
+    "cache",
+    "kv",
+    "typed-keys"
+  ],
+  "author": "Sebastian Weidmann",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/watchmaker/typed-keys.git"
+  },
+  "bugs": {
+    "url": "https://github.com/watchmaker/typed-keys/issues"
+  },
+  "homepage": "https://github.com/watchmaker/typed-keys#readme",
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "eslint": "^8.55.0",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "vitest": "^1.6.0"
+  }
+}
